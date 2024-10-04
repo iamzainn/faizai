@@ -16,7 +16,7 @@ import DemoModal from "./HomePage/DemoModal";
 import { usePathname} from "next/navigation";
 import Link from "next/link";
 
-// Main service data
+
 const services = [
   {
     name: "Financial Reporting",
@@ -39,21 +39,21 @@ const services = [
  
 ];
 
-// Sub-services under Financial Reporting
+
 const financialServices = [
   { name: "Bookkeeping", href: "/financial-reporting/bookkeeping" },
   { name: "Accounting", href: "/financial-reporting/Accounting" },
   { name: "Fractional CFO", href: "/financial-reporting/Fractional_CFO" },
 ];
 
-// Sub-services under Tax
+
 const taxServices = [
   { name: "Tax Planning", href: "/tax/TaxPlanning" },
   { name: "Tax Compliance", href: "/tax/TaxCompliance" },
   { name: "Tax Resolution", href: "/tax/TaxResolution" },
 ];
 
-// Sub-services under S/4 Finance Implementation
+
 const s4FinanceServices = [
   { name: "Implementations", href: "/s4-finance/Implementations" },
   { name: "Central Finance (CFIN)", href: "/s4-finance/CentralFinance(CFIN)" },
@@ -138,7 +138,7 @@ export default function Header() {
   const [isPricingFinancialServiceOpen, setIsPricingFinancialServiceOpen] = useState(false); // Pricing dropdown for Financial Reporting
   const [isPricingTaxServiceOpen, setIsPricingTaxServiceOpen] = useState(false); // Pricing dropdown for Tax
   const [isPricingS4FinanceServiceOpen, setIsPricingS4FinanceServiceOpen] = useState(false); // Pricing dropdown for S/4 Finance
-  const [isClient, setIsClient] = useState(false);
+
   const pathname = usePathname();
  
 
